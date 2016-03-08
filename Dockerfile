@@ -1,5 +1,5 @@
-# Ubuntu 15.10 Ansible-ready docker file
-FROM ubuntu:15.10
+# Ubuntu 15.04 Ansible-ready docker file
+FROM ubuntu:15.04
 MAINTAINER Bruce Becker bbecker@csir.co.za
 # Get Ansible
 RUN apt-get update
