@@ -6,3 +6,4 @@ RUN yum update
 RUN  yum install -y python-pip git
 RUN git clone git://github.com/ansible/ansible.git --recursive
 WORKDIR ansible
+RUN python setup.py install
