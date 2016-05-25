@@ -13,7 +13,7 @@ services:
   - docker
 
 before_install:
-  - cd containers/$OSDIR
+  - cd $OSDIR
 
 install:
   - docker build  .
