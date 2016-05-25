@@ -1,5 +1,6 @@
+[![Docker Stars](https://img.shields.io/docker/stars/aaroc/ansiblecontainer.svg?maxAge=2592000?style=plastic)](https://hub.docker.com/r/aaroc/ansiblecontainer/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/aaroc/ansiblecontainer.svg?maxAge=2592000?style=plastic)](https://hub.docker.com/r/aaroc/ansiblecontainer/)
+
 # AnsibleContainer
 
-A repo for the ansible container [automated build on Docker Hub](https://hub.docker.com/r/aaroc/ansiblecontainer)
-
-Each OS supported is in it's own branch.
+A repo for the ansible container [automated build](https://hub.docker.com/r/aaroc/ansiblecontainer) on Docker hub.
