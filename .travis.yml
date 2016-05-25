@@ -5,8 +5,15 @@ sudo: required
 
 language: bash
 
+env:
+  - OSDIR=u14.04
+  - OSDIR=centos-6
+
 services:
   - docker
+
+before_install:
+  - cd containers/$OSDIR
 
 install:
   - docker build  .
