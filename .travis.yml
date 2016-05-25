@@ -6,7 +6,7 @@ sudo: required
 language: bash
 
 env:
-  - OSDIR=u14.04
+  - OSDIR=u1404
   - OSDIR=centos-6
 
 services:
@@ -16,11 +16,10 @@ before_install:
   - cd $OSDIR
 
 install:
-  - docker build  .
-  - docker images
+  - docker build -t ansiblecontainer
 #  - docker run -d aaroc/code-rade-build-slave:u1404 /bin/sh -c "echo hi"
 script:
-  - docker ps -a
+  - docker run  ansiblecontainer /bin/sh -c echo hi
 
 after_success:
 
