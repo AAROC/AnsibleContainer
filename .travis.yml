@@ -21,8 +21,8 @@ install:
   - docker build -t ansiblecontainer .
 #  - docker run -d aaroc/code-rade-build-slave:u1404 /bin/sh -c "echo hi"
 script:
+  - docker run -t -P ansiblecontainer ansible all -m setup -c local
 # check that ansible is working
-  - docker run -P ansiblecontainer ansible localhost   -m setup -c local
 
 after_success:
 
