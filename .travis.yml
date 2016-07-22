@@ -13,12 +13,11 @@ services:
   - docker
 
 before_install:
-  - cd $OSDIR
   - git clone --recursive https://github.com/AAROC/DevOps
 
 # Build the container
 install:
-  - docker build -t ansiblecontainer .
+  - docker build -t ansiblecontainer -f Dockerfile.$OSDIR .
 #  - docker run -d aaroc/code-rade-build-slave:u1404 /bin/sh -c "echo hi"
 script:
   - docker run -t -P ansiblecontainer ansible all -m setup -c local
