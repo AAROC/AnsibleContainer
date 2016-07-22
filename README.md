@@ -3,4 +3,9 @@
 [![Build Status](https://travis-ci.org/AAROC/AnsibleContainer.svg?branch=master)](https://travis-ci.org/AAROC/AnsibleContainer)
 # AnsibleContainer
 
-A repo for the ansible container [automated build](https://hub.docker.com/r/aaroc/ansiblecontainer) on Docker hub.
+A repo for Ansible-ready containers [automated build](https://hub.docker.com/r/aaroc/ansiblecontainer) on Docker hub.
+
+Two different base images are used :
+
+  * CEntOS 6
+  * Ubuntu 14.04
