@@ -3,19 +3,20 @@ FROM centos:7
 MAINTAINER Bruce Becker bbecker@csir.co.za
 # Install the EPEL repo
 RUN rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+RUN yum update -y
+# This is probably a _really_ bad idea - lots of unneeded dependencies.
+RUN yum -y groupinstall 'Development Tools'
 # Install prerequisites
 RUN  yum -y install \
-            python-simplejson \
             libselinux-python \
-            python-setuptools \
             python-devel \
-            python-pip \
+            python-setuptools \
             libffi-devel \
-            libssl-devel openssl-devel \
-            which \
-            git
-RUN yum -y groupinstall 'Development Tools'
+            openssl-devel \
+            which
+RUN easy_install pip
 # Install Ansible
 RUN pip install ansible
 RUN which ansible
 RUN ansible --version
+RUN yum clean all
