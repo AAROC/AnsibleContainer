@@ -10,10 +10,10 @@ env:
   - OS=u1610
   - OS=centos6
   - OS=centos7
-
-matrix:
-  allow_failures:
-    - env: OS=centos7
+# 
+# matrix:
+#   allow_failures:
+#     - env: OS=centos7
 services:
   - docker
 
