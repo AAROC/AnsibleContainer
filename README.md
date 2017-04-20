@@ -1,6 +1,4 @@
-[![Docker Stars](https://img.shields.io/docker/stars/aaroc/ansiblecontainer.svg?maxAge=2592000?style=plastic)](https://hub.docker.com/r/aaroc/ansiblecontainer/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/aaroc/ansiblecontainer.svg?maxAge=2592000?style=plastic)](https://hub.docker.com/r/aaroc/ansiblecontainer/)
-[![Build Status](https://travis-ci.org/AAROC/AnsibleContainer.svg?branch=master)](https://travis-ci.org/AAROC/AnsibleContainer)
+[![DOI](https://zenodo.org/badge/53336926.svg)](https://zenodo.org/badge/latestdoi/53336926) [![Docker Stars](https://img.shields.io/docker/stars/aaroc/ansiblecontainer.svg?maxAge=2592000?style=plastic)](https://hub.docker.com/r/aaroc/ansiblecontainer/) [![Docker Pulls](https://img.shields.io/docker/pulls/aaroc/ansiblecontainer.svg?maxAge=2592000?style=plastic)](https://hub.docker.com/r/aaroc/ansiblecontainer/) [![Build Status](https://travis-ci.org/AAROC/AnsibleContainer.svg?branch=master)](https://travis-ci.org/AAROC/AnsibleContainer) [![Docker Repository on Quay](https://quay.io/repository/aaroc/ansible-ready/status "Docker Repository on Quay")](https://quay.io/repository/aaroc/ansible-ready)
 
 # Ansible Docker containers
 
@@ -39,5 +37,7 @@ No matter how simple the image, there's almost always room for improvement:
   1. If you would like to discuss any aspect of the code, [start a topic on the discussion forum](https://discourse.sci-gaia.eu)
 
 # Citing
-<!-- awaiting DOI -->
-If you use  this work or derivatives thereof, please cite :
+
+If you use  this work or derivatives thereof, please cite as :
+
+**Bruce Becker. (2017). AAROC/AnsibleContainer: Ansible Ready Container for DevOps [Data set]. Zenodo. [http://doi.org/10.5281/zenodo.556399](http://doi.org/10.5281/zenodo.556399)**
