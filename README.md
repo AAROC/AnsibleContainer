@@ -11,3 +11,4 @@ Two different base images are used :
   * CEntOS 6
   * CEntOS 7
   * Ubuntu 14.04
+  * Ubuntu 16.10
