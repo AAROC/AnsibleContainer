@@ -17,7 +17,8 @@ RUN  apt-get -y install \
      build-essential
 
 # Install Ansible
-RUN pip install paramiko PyYAML Jinja2 httplib2 six
 RUN pip install ansible
 RUN which ansible
 RUN ansible --version
+# Clean the cache
+RUN apt-get remove --purge -y $BUILD_PACKAGES $(apt-mark showauto) && rm -rf /var/lib/apt/lists/*
