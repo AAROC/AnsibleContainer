@@ -1,5 +1,7 @@
 [![DOI](https://zenodo.org/badge/53336926.svg)](https://zenodo.org/badge/latestdoi/53336926) [![Docker Stars](https://img.shields.io/docker/stars/aaroc/ansiblecontainer.svg?maxAge=2592000?style=plastic)](https://hub.docker.com/r/aaroc/ansiblecontainer/) [![Docker Pulls](https://img.shields.io/docker/pulls/aaroc/ansiblecontainer.svg?maxAge=2592000?style=plastic)](https://hub.docker.com/r/aaroc/ansiblecontainer/) [![Build Status](https://travis-ci.org/AAROC/AnsibleContainer.svg?branch=master)](https://travis-ci.org/AAROC/AnsibleContainer) [![Docker Repository on Quay](https://quay.io/repository/aaroc/ansible-ready/status "Docker Repository on Quay")](https://quay.io/repository/aaroc/ansible-ready)
 
+<!-- added a few other repos on quay -->
+
 # Ansible Docker containers
 
 It is convenient to have a Docker image which is already configured to run Ansible in order to test playbooks for various gridcloud services. This is a repo for Ansible-ready containers [automatically built](https://hub.docker.com/r/aaroc/ansiblecontainer) on Docker Hub.
