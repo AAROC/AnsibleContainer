@@ -39,7 +39,7 @@ RUN ansible --version
 
 #  Clean up
 RUN yum clean all
-RUN rm ~/.cache/pip/*
+RUN rm -r ~/.cache/pip/*
 
 # List of installed packages : 
 # rpm -qa | sed 's/-[0-9].*$//' | uniq | sort
