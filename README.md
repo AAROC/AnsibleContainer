@@ -11,7 +11,8 @@ Different base images are used :
   * CEntOS 6
   * CEntOS 7
   * Ubuntu 14.04
-  * Ubuntu 16.10
+  * ~Ubuntu 16.10~ (support has ended)
+  * Ubuntu 16.04
 
 The images are automatically built based on the branch and Dockerfile names. These images are used to build other services in the AAROC/DevOps service registry.
 
