@@ -7,7 +7,7 @@ language: bash
 
 env:
   - OS=u1404
-  - OS=u1610
+  - OS=u1604
   - OS=centos6
   - OS=centos7
 # 
