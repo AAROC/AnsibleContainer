@@ -31,8 +31,11 @@ RUN  apt-get -y install \
      build-essential
 
 # Install Ansible
+RUN pip install --upgrade pip
+RUN pip install urllib3[secure]
 RUN pip install ansible
 RUN which ansible
 RUN ansible --version
 # Clean the cache
 RUN rm -rf /var/lib/apt/lists/*
+RUN rm -rf /root/.cache/
