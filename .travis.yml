@@ -1,36 +1,26 @@
-# We need to test :
-# Client access to the repositories (for various targets)
-# build-slave configuration
 sudo: required
-
 language: bash
-
 env:
+  matrix:
   - OS=u1404
   - OS=u1604
   - OS=centos6
   - OS=centos7
-# 
-# matrix:
-#   allow_failures:
-#     - env: OS=centos7
+  global:
+    secure: yad4VLwMMYbdZjJ/76GroodLeOUc8jh7kuvfmXdrT1WhH/uuDf3bTQPoowXrOlsjj5bIyLzC3r5oxov/3rp+vk2tVR3/DBb7jdQ6HM84q6jVWD7Knky7tak/MhTZJQ3hQrrATETH4OwiAzODQ782IZzejZsuYRDpZf8ex32cwy+/iLLwxF2I7qIHT1C2hTaIm8GqGk1MymQ+BtFEqKwjkITrr4Z2Vq/cI4QoU1S+L3rc3tlFzoCNVN3ZuWoiikLkrKU/oX9Mwby7rsaEbUVjBO6oUq/zXP/bvmDF1B1ZXs7739ZXwt5pByrqSDVoGEKbqQMGBKLoe4Thk/kgzOwF5A2b+neEJH+7rRGx2pPl1vWiiqrqj94z4qmntcN6RAdB7iu2DmlX8k1HisYPFtkN1kRCU/WvUvG19zQ7utTrZs/+LprvqEk8+7glpjmW+r4xDRARPaEJYpuF6ZTa5adu5AFNdwlghp7WZOh7fhLsxhWGGhTfFPOZ5RS63I6HNWGtvt5vh4yOrSx32rbZS5v56w+hWJG0DJhMqu+hIEn7j4qpd0Ckhn/gzdYr/626ex5qYvRwstMUj6siR4JaxUx/uO4JHkymXLofcZ0GkYa/T4JcZbeTa/1PuiJi9S9PZXgROaAGOqcFMvdSwIzE3DNJDodev9/l8AbLe2/i3qFmJ40=
 services:
-  - docker
-
+- docker
 before_install:
-  - git clone --recursive https://github.com/AAROC/DevOps
-
-# Build the container
+- git clone --recursive https://github.com/AAROC/DevOps
 install:
-  - docker build -t quay.io/aaroc/ansible-ready-${OS} -f Dockerfile.$OS .
+- docker build -t quay.io/aaroc/ansible-ready-${OS} -f Dockerfile.$OS .
 script:
-  - docker run quay.io/aaroc/ansible-ready-${OS} ansible localhost -c local -m setup
-
+- docker run quay.io/aaroc/ansible-ready-${OS} ansible localhost -c local -m setup
 after_success:
-  - docker push quay.io/aaroc/ansible-ready-${OS}
-after_failure:
-
+- docker login -u="aaroc+buildy_mc_testface" -p="${QUAY_LOGIN}" quay.io
+- docker push quay.io/aaroc/ansible-ready-${OS}
+after_failure: 
 notifications:
   slack:
     rooms:
-      - africa-arabia-roc:qn956vBmV7VIyJ1Xod4Cmnd5#coderade
+    - africa-arabia-roc:qn956vBmV7VIyJ1Xod4Cmnd5#coderade
