@@ -22,14 +22,12 @@ before_install:
 
 # Build the container
 install:
-  - docker build -t ansiblecontainer -f Dockerfile.$OS .
-#  - docker run -d aaroc/code-rade-build-slave:u1404 /bin/sh -c "echo hi"
+  - docker build -t quay.io/aaroc/ansible-ready-${OS} -f Dockerfile.$OS .
 script:
-  - docker run -t -P ansiblecontainer ansible all -c local -m setup
-# check that ansible is working
+  - docker run ansible-ready-${OS} ansible localhost -c local -m setup
 
 after_success:
-
+  - docker push quay.io/aaroc/ansible-ready-${OS}
 after_failure:
 
 notifications:
