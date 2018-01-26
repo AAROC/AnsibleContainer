@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/53336926.svg)](https://zenodo.org/badge/latestdoi/53336926) [![Docker Stars](https://img.shields.io/docker/stars/aaroc/ansiblecontainer.svg?maxAge=2592000?style=plastic)](https://hub.docker.com/r/aaroc/ansiblecontainer/) [![Docker Pulls](https://img.shields.io/docker/pulls/aaroc/ansiblecontainer.svg?maxAge=2592000?style=plastic)](https://hub.docker.com/r/aaroc/ansiblecontainer/) [![Build Status](https://travis-ci.org/AAROC/AnsibleContainer.svg?branch=master)](https://travis-ci.org/AAROC/AnsibleContainer) [![Docker Repository on Quay](https://quay.io/repository/aaroc/ansible-ready/status "Docker Repository on Quay")](https://quay.io/repository/aaroc/ansible-ready)
+[![DOI](https://zenodo.org/badge/53336926.svg)](https://zenodo.org/badge/latestdoi/53336926)  [![Build Status](https://travis-ci.org/AAROC/AnsibleContainer.svg?branch=master)](https://travis-ci.org/AAROC/AnsibleContainer) 
 
 <!-- added a few other repos on quay -->
 
@@ -8,9 +8,9 @@ It is convenient to have a Docker image which is already configured to run Ansib
 
 Different base images are used :
 
-  * CEntOS 6
-  * CEntOS 7
-  * Ubuntu 14.04
+  * CEntOS 6 [![Docker Repository on Quay](https://quay.io/repository/aaroc/ansible-ready-centos6/status "Docker Repository on Quay")](https://quay.io/repository/aaroc/ansible-ready-centos6)
+  * CEntOS 7 
+  * Ubuntu 14.04 [![Docker Repository on Quay](https://quay.io/repository/aaroc/ansible-ready-u1404/status "Docker Repository on Quay")](https://quay.io/repository/aaroc/ansible-ready-u1404)
   * ~Ubuntu 16.10~ (support has ended)
   * Ubuntu 16.04
 
