@@ -4,7 +4,7 @@
 
 # Ansible Docker containers
 
-It is convenient to have a Docker image which is already configured to run Ansible in order to test playbooks for various gridcloud services. This is a repo for Ansible-ready containers [automatically built](https://hub.docker.com/r/aaroc/ansiblecontainer) on Docker Hub.
+It is convenient to have a Docker image which is already configured to run Ansible in order to test playbooks for various gridcloud services. This is a repo for Ansible-ready images, built automatically on Travis and pushed to the relevant repo on the AAROC org on [Quay](https://quay.io/)
 
 Different base images are used :
 
@@ -14,7 +14,9 @@ Different base images are used :
   * ~Ubuntu 16.10~ (support has ended)
   * Ubuntu 16.04 [![Docker Repository on Quay](https://quay.io/repository/aaroc/ansible-ready-u1604/status "Docker Repository on Quay")](https://quay.io/repository/aaroc/ansible-ready-u1604)
 
-The images are automatically built based on the branch and Dockerfile names. These images are used to build other services in the AAROC/DevOps service registry.
+The images are automatically built based on the branch and Dockerfile names. These images are used to build other services in the AAROC/DevOps service registry, notably the CODE-RADE build containers.
+
+Further base operating system images will be considered based on community need. Please open an issue with a request for such if the need arises.
 
 # How to use these containers
 
@@ -28,19 +30,11 @@ If you are developing roles or playbooks for AAROC and performing Continuous Int
 
 # Contributing
 
-Docker images are often personal expressions of their author, and thus contain many of their flaws.
-No matter how simple the image, there's almost always room for improvement:
-
-  1. Please feel free to send pull requests for suggestions on optimising the build. These will likely be accepted if the resulting image is :
-    1. smaller
-    1. more secure
-    1. builds faster
-    without sacrificing functionality.
-  1. If you find any issues or problems, please [open an issue](https://github.com/AAROC/AnsibleContainer/issues/new) in the GitHub repo.
-  1. If you would like to discuss any aspect of the code, [start a topic on the discussion forum](https://discourse.sci-gaia.eu)
+See [Contributing](CONTRIBUTING.md) for how to contribute to the development of the repository. Please abide by the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 # Citing
 
 If you use  this work or derivatives thereof, please cite as :
 
 **Bruce Becker. (2017). AAROC/AnsibleContainer: Ansible Ready Container for DevOps [Data set]. Zenodo. [http://doi.org/10.5281/zenodo.556399](http://doi.org/10.5281/zenodo.556399)**
+
