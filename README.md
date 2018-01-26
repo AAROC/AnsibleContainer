@@ -9,10 +9,10 @@ It is convenient to have a Docker image which is already configured to run Ansib
 Different base images are used :
 
   * CEntOS 6 [![Docker Repository on Quay](https://quay.io/repository/aaroc/ansible-ready-centos6/status "Docker Repository on Quay")](https://quay.io/repository/aaroc/ansible-ready-centos6)
-  * CEntOS 7 
+  * CEntOS 7 [![Docker Repository on Quay](https://quay.io/repository/aaroc/ansible-ready-centos7/status "Docker Repository on Quay")](https://quay.io/repository/aaroc/ansible-ready-centos7)
   * Ubuntu 14.04 [![Docker Repository on Quay](https://quay.io/repository/aaroc/ansible-ready-u1404/status "Docker Repository on Quay")](https://quay.io/repository/aaroc/ansible-ready-u1404)
   * ~Ubuntu 16.10~ (support has ended)
-  * Ubuntu 16.04
+  * Ubuntu 16.04 [![Docker Repository on Quay](https://quay.io/repository/aaroc/ansible-ready-u1604/status "Docker Repository on Quay")](https://quay.io/repository/aaroc/ansible-ready-u1604)
 
 The images are automatically built based on the branch and Dockerfile names. These images are used to build other services in the AAROC/DevOps service registry.
 
