@@ -1,0 +1,33 @@
+{
+    "description": "<p>This is the latest release of the AnsibleContainer images used in several downstream tests and tasks in the Africa-Arabia Regional Operations Centre. Several changes have been made since the previous release</p>\nAutomated builds pushed to the repository\n<p>Builds are now done in the continuous integration pipeline, which is automated with Travis. This pipeline builds the images and tests their functionality with simple tests. Previously, these images were pushed to the respective repositories on the <a href=\"https://quay.io\">Quay</a> registry manually after testing passed. Now, we have created a robot user on quay which tags and pushes images to their repository. These repositories are :</p>\n<ul>\n<li>CEntOS 6 <a href=\"https://quay.io/repository/aaroc/ansible-ready-centos6\"></a></li>\n<li>CEntOS 7 <a href=\"https://quay.io/repository/aaroc/ansible-ready-centos7\"></a></li>\n<li>Ubuntu 14.04 <a href=\"https://quay.io/repository/aaroc/ansible-ready-u1404\"></a></li>\n<li>~Ubuntu 16.10~ (support has ended)</li>\n<li>Ubuntu 16.04 <a href=\"https://quay.io/repository/aaroc/ansible-ready-u1604\"></a></li>\n</ul>\nEnd of support for Ubuntu 16.10\n<p>The Ubuntu 16.10 image has been removed from Docker Hub, and the package repositories have been removed from archive.ubuntu.org\nFor this reason, we have removed the Ubuntu16.10 profile from repository and replaced it with the LTS 16.04</p>\nContributing and Code of Conduct\n<p>We have added the typical <code>CONTRIBUTING.md</code> and <code>CODE_OF_CONDUCT.md</code> files to the repository in order to better support and encourage community contributions.</p>", 
+    "license": "Apache-2.0", 
+    "title": "AAROC/AnsibleContainer: Automated builds of Ansible-ready containers for DevOps", 
+    "version": "v0.2.1", 
+    "upload_type": "software", 
+    "publication_date": "2018-01-27", 
+    "creators": [
+        {
+            "affiliation": "Meraka Institute, CSIR", 
+            "name": "Bruce Becker",
+            "orcid": "0000-0002-6607-7145"
+        }, 
+        {
+            "affiliation": "Meraka Institute, CSIR",
+            "name": "Sean Murray",
+            "orcid": "0000-0003-0548-588X"
+        }
+    ], 
+    "access_right": "open", 
+    "related_identifiers": [
+        {
+            "scheme": "url", 
+            "identifier": "https://github.com/AAROC/AnsibleContainer/tree/v0.2.0", 
+            "relation": "isSupplementTo"
+        }, 
+        {
+            "scheme": "doi", 
+            "identifier": "10.5281/zenodo.597811", 
+            "relation": "isPartOf"
+        }
+    ]
+}
