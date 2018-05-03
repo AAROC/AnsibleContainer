@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Ubuntu 14.04 Ansible-ready docker file
-FROM ubuntu:14.04
+# Ubuntu 16.04 Ansible-ready docker file
+FROM ubuntu:16.04
 MAINTAINER Bruce Becker bbecker@csir.co.za
 # Get Ansible
 # Get Ansible requirements
@@ -31,10 +31,9 @@ RUN  apt-get -y install \
      debianutils \
      build-essential
 
+# Install Ansible
 RUN pip install --upgrade pip
 RUN pip install urllib3[secure]
-
-# Install Ansible
 RUN pip install ansible
 RUN which ansible
 RUN ansible --version
