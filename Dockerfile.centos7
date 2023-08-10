@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # CentOS 7 Ansible-ready docker file
-FROM centos:7
+FROM centos:8
 MAINTAINER Bruce Becker bbecker@csir.co.za
 # Install the EPEL repo
 RUN rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
