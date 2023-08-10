@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Ubuntu 14.04 Ansible-ready docker file
-FROM ubuntu:14.04.5
+FROM ubuntu:22.04
 MAINTAINER Bruce Becker bbecker@csir.co.za
 # Get Ansible
 # Get Ansible requirements
